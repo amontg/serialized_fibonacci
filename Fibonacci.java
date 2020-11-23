@@ -31,9 +31,12 @@ public class Fibonacci extends FibonacciBase {
         // going to statically add 0 to [0][1] and 1 to [1][1] because those never change anyway
         int x = 0;
         for (int i = 0; i < N; i++) {
-            if (i == 0) { x = 0; }
-            else if (i == 1) { x = 1; }
-            else { x = fibs[i-2][1] + fibs[i-1][1]; }
+            if (i == 0) 
+            { x = 0; }
+            else if (i == 1) 
+            { x = 1; }
+            else 
+            { x = fibs[i-2][1] + fibs[i-1][1]; }
         }
         
         return x;
